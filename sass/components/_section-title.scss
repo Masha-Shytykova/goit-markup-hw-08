@@ -1,9 +1,14 @@
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(28px, 33px, 0.03em, 700);
   text-align: center;
-  letter-spacing: 0.03em;
+
+  // margin-bottom: 50px;
+
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  // text-align: center;
+  // letter-spacing: 0.03em;
 }
