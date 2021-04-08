@@ -5,12 +5,37 @@
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__wrapper {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-between;
+
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+.footer__box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    width: 231px;
+    text-align: left;
+  }
 }
 
 .logo--white {
@@ -21,12 +46,15 @@
 
 .address {
   margin-top: 20px;
-  font-style: normal;
   @include font(14px, 24px, 0.03em);
+  font-style: normal;
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -44,21 +72,36 @@
 }
 
 .subscribe {
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
+
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+
 .subscribe__input {
   height: 50px;
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   &::placeholder {
     @include font(16px, 20px, 0.03em);
@@ -73,6 +116,11 @@
 
   display: flex;
   align-items: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 
   padding: 10px 29px;
   border-radius: 4px;
