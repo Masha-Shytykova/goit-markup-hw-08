@@ -154,6 +154,11 @@
   width: 100vw;
   max-width: 480px;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-color: #ffffff;
 
   padding: 48px 40px;
@@ -198,21 +203,24 @@
 
 .mobile-menu__tel {
   display: inline-block;
-  margin-top: 306px;
+  // margin-top: 290px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   @include font(34px, 40px, 0.02em, 500);
   color: var(--accent-color);
 }
 
 .mobile-menu__email {
   display: inline-block;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   @include font(24px, 28px, 0.02em, 500);
   color: var(--secondary-color);
 }
 
 .mobile-socials__list {
   display: flex;
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 .mobile-socials__item:not(:last-child) {

@@ -10,6 +10,13 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/backgroundicon/img-hero@2x.jpg);
+  }
+}
 
 .hero__container {
   text-align: center;

@@ -549,6 +549,9 @@ img {
   width: 100vw;
   max-width: 480px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
   padding: 48px 40px;
   opacity: 0;
@@ -592,7 +595,8 @@ img {
 
 .mobile-menu__tel {
   display: inline-block;
-  margin-top: 306px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -602,7 +606,8 @@ img {
 
 .mobile-menu__email {
   display: inline-block;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -612,7 +617,7 @@ img {
 
 .mobile-socials__list {
   display: flex;
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 .mobile-socials__item:not(:last-child) {
@@ -634,6 +639,12 @@ img {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/backgroundicon/img-hero@2x.jpg);
+  }
 }
 
 .hero__container {
