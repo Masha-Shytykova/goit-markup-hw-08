@@ -33,6 +33,6 @@
 @mixin font($fs: 14px, $lh: 18px, $ls: 0.03em, $fw: 400) {
   font-size: $fs;
   line-height: decimal-round($lh/$fs, 2);
-  letter-spacing: 0.03em;
+  letter-spacing: $ls;
   font-weight: $fw;
 }
